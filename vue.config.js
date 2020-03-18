@@ -1,8 +1,8 @@
 module.exports = {
   // 基本路径
-  baseUrl: '/',
+  publicPath: '././',
   // 输出文件目录
-  outputDir: 'dist',
+  outputDir: 'docs',
   // eslint-loader 是否在保存的时候检查
   devServer: {
     disableHostCheck: true,
@@ -12,7 +12,7 @@ module.exports = {
     https: false,
     hotOnly: false,
     proxy: null, // 设置代理
-    before: app => {},
+    before: app => {}
   },
   transpileDependencies: ['vuetify'],
   pluginOptions: {
@@ -20,7 +20,7 @@ module.exports = {
       locale: 'en',
       fallbackLocale: 'en',
       localeDir: 'locales',
-      enableInSFC: false,
-    },
-  },
+      enableInSFC: false
+    }
+  }
 }
